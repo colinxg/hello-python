@@ -23,8 +23,14 @@ print()
 # version 3
 
 for i in range(1, 10):
-	for j in range(1, i+1):
-		print(str(j)+'*'+str(i)+'='+str(i*j) + '\t',end=' ')
+	print(' '*7*(i-1), end='' )
+	for j in range(i, 10):
+		product = i*j
+		if product < 10:
+			end = '  '
+		else:
+			end = ' '
+		print(str(i)+'*'+str(j)+'='+str(i*j),end=end)
 	print()
 
 

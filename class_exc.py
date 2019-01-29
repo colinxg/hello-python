@@ -16,14 +16,12 @@ class RandomNumber:
     def getvalue(self):
         print('zhe count is {} \nzhe value be "{}" to "{}"'.format(self._count, self._mix, self._max))
 
-    a = property(getvalue, setvalue)
+
 
 
 # a = RandomNumber(10)
 # print(a.getnumber())
 # a.getvalue()
-# a.a = 10
-# a.a
 #
 # b = tuple(zip(a.getnumber(), a.getnumber()))
 # print(b)
